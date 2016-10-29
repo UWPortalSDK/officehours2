@@ -46,13 +46,14 @@
             {{detailsItem.instructorName.nameProf}}
                 <i class="ion-chevron-right icon"></i>
             </div>
-		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
+        
+		<widget-list list="item in detailsItem.subjectInstructors track by item.nameProf" show-items="3" render="true">
 			<div clickable ng-click="showSIDetails(detailsItem)">
 				{{item.nameProf}}
 					<i class="ion-chevron-right icon"></i>
 			</div>
             </widget-list>
-        <widget-list list="item in detailsItem.taNames" show-items="3">
+        <widget-list list="item in detailsItem.taNames track by item.nameProf" show-items="3" render="true">
             <div clickable ng-click="showTADetails(detailsItem)">
                 {{item.nameProf}}
                     <i class="ion-chevron-right icon"></i>
