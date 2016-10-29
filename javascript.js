@@ -9,20 +9,20 @@ angular.module('portalApp')
 			instructorName:         {
            								title:'Course 1', 
          								tags: ['Coursename', 'Profname'],
-         								nameProf:"Displays name",
+         								nameProf:"Displays name1",
          								daytime:"Days,Timings"
          							},
             subjectInstructors: [        
         					  {
          						title:'Course 1A', 
          						tags: ['Coursename', 'Profname'],
-         						nameProf:"Displays name",
+         						nameProf:"Displays name1A",
          						daytime:"Days,Timings"
         						},
         					{
          						title:'Course 1B', 
          						tags: ['Coursename', 'Profname'],
-         						nameProf:"Displays name",
+         						nameProf:"Displays name1B",
          						daytime:"Days,Timings"
         					}
             			],
@@ -30,13 +30,13 @@ angular.module('portalApp')
                     {
          			 title:'Course 1a', 
          			 tags: ['Coursename', 'Profname'],
-         			 nameProf:"Displays name",
+         			 nameProf:"Displays name1a",
          			 daytime:"Days,Timings"
         			},
                 	{
          			title:'Course 1b', 
          			tags: ['Coursename', 'Profname'],
-         			nameProf:"Displays name",
+         			nameProf:"Displays name1b",
          			daytime:"Days,Timings"
         			}
             	   ]
@@ -49,20 +49,20 @@ angular.module('portalApp')
             instructorName:         {
          								title:'Course 2', 
          								tags: ['Coursename', 'Profname'],
-         								nameProf:"Displays name",
+         								nameProf:"Displays name2",
          								daytime:"Days,Timings"
         							},
             subjectInstructors:[
         						        {
          									title:'Course 2A', 
          									tags: ['Coursename', 'Profname'],
-         									nameProf:"Displays name",
+         									nameProf:"Displays name2A",
          									daytime:"Days,Timings"
         								},
                                        {
          								title:'Course 2B', 
          								tags: ['Coursename', 'Profname'],
-         								nameProf:"Displays name",
+         								nameProf:"Displays name2B",
          								daytime:"Days,Timings"
         								}
                                ],
@@ -70,13 +70,13 @@ angular.module('portalApp')
                     {
          			title:'Course 2a', 
          			tags: ['Coursename', 'Profname'],
-         			nameProf:"Displays name",
+         			nameProf:"Displays name2a",
          			daytime:"Days,Timings"
         			},
                     {
          			title:'Course 2b', 
          			tags: ['Coursename', 'Profname'],
-         			nameProf:"Displays name",
+         			nameProf:"Displays name2b",
 		            daytime:"Days,Timings"
         			}
          		   ]
@@ -89,20 +89,20 @@ angular.module('portalApp')
                     {
          			title:'Course 3', 
          			tags: ['Coursename', 'Profname'],
-         			nameProf:"Displays name",
+         			nameProf:"Displays name3",
          			daytime:"Days,Timings"
         			},
             subjectInstructors:[
                         		{
          						title:'Course 3A', 
          						tags: ['Coursename', 'Profname'],
-         						nameProf:"Displays name",
+         						nameProf:"Displays name3A",
          						daytime:"Days,Timings"
         						},
          		               {
          						title:'Course 3B', 
          						tags: ['Coursename', 'Profname'],
-         						nameProf:"Displays name",
+         						nameProf:"Displays name3B",
          						daytime:"Days,Timings"
         						}
             					],
@@ -110,13 +110,13 @@ angular.module('portalApp')
                         {
          				title:'Course 3a', 
          				tags: ['Coursename', 'Profname'],
-         				nameProf:"Displays name",
+         				nameProf:"Displays name3a",
          				daytime:"Days,Timings"
         				}, 
                         {
          				title:'Course 3b', 
          				tags: ['Coursename', 'Profname'],
-         				nameProf:"Displays name",
+         				nameProf:"Displays name3b",
          				daytime:"Days,Timings"
         				}
             		]
@@ -129,20 +129,20 @@ angular.module('portalApp')
             			{
          				title:'Course 4', 
          				tags: ['Coursename', 'Profname'],
-         				nameProf:"Displays name",
+         				nameProf:"Displays name4",
          				daytime:"Days,Timings"
         				},
             subjectInstructors:[
                 				{
          						title:'Course 4A', 
          						tags: ['Coursename', 'Profname'],
-         						nameProf:"Displays name",
+         						nameProf:"Displays name4A",
          						daytime:"Days,Timings"
         						},
            				        {
          						title:'Course 4B', 
          						tags: ['Coursename', 'Profname'],
-         						nameProf:"Displays name",
+         						nameProf:"Displays name4B",
          						daytime:"Days,Timings"
         						}
             				],
@@ -150,13 +150,13 @@ angular.module('portalApp')
                         {
          				title:'Course 4a', 
          				tags: ['Coursename', 'Profname'],
-         				nameProf:"Displays name",
+         				nameProf:"Displays name4a",
          				daytime:"Days,Timings"
         				}, 
                         {
          				title:'Course 4b', 
          				tags: ['Coursename', 'Profname'],
-         				nameProf:"Displays name",
+         				nameProf:"Displays name4b",
          				daytime:"Days,Timings"
         				}
             		]
@@ -169,20 +169,20 @@ angular.module('portalApp')
             			{
          				title:'Course 5', 
          				tags: ['Coursename', 'Profname'],
-         				nameProf:"Displays name",
+         				nameProf:"Displays name5",
          				daytime:"Days,Timings"
         				},
             subjectInstructors:[        
             {
             title:'Course 5A', 
             tags: ['Coursename', 'Profname'],
-            nameProf:"Displays name",
+            nameProf:"Displays name5A",
             daytime:"Days,Timings"
             },
            {
             title:'Course 5B', 
             tags: ['Coursename', 'Profname'],
-            nameProf:"Displays name",
+            nameProf:"Displays name5B",
             daytime:"Days,Timings"
             }
             ],
@@ -190,13 +190,13 @@ angular.module('portalApp')
           	        {
    				    title:'Course 5a', 
          		    tags: ['Coursename', 'Profname'],
-         			nameProf:"Displays name",
+         			nameProf:"Displays name5a",
          			daytime:"Days,Timings"
         			}, 
                     {
          			title:'Course 5b', 
          			tags: ['Coursename', 'Profname'],
-         			nameProf:"Displays name",
+         			nameProf:"Displays name5b",
          			daytime:"Days,Timings"
         			}
             		]
@@ -209,20 +209,20 @@ angular.module('portalApp')
          			        {
       					   title:'Course 6', 
          				   tags: ['Coursename', 'Profname'],
-         				   nameProf:"Displays name",
+         				   nameProf:"Displays name6",
          			       daytime:"Days,Timings"
         					},
             subjectInstructors:[        
                 {
           		title:'Course 6A', 
          		tags: ['Coursename', 'Profname'],
-         		nameProf:"Displays name",
+         		nameProf:"Displays name6A",
          		daytime:"Days,Timings"
         		},
                 {
          		title:'Course 6B', 
          		tags: ['Coursename', 'Profname'],
-         		nameProf:"Displays name",
+         		nameProf:"Displays name6B",
          		daytime:"Days,Timings"
         		}
             ],
@@ -230,13 +230,13 @@ angular.module('portalApp')
                      {
          			title:'Course 6a', 
          			tags: ['Coursename', 'Profname'],
-         			nameProf:"Displays name",
+         			nameProf:"Displays name6a",
          			daytime:"Days,Timings"
         			}, 
                    {
          			title:'Course 6b', 
          			tags: ['Coursename', 'Profname'],
-         			nameProf:"Displays name",
+         			nameProf:"Displays name6b",
          			daytime:"Days,Timings"
         			}
             ]
