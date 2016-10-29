@@ -7,43 +7,46 @@ angular.module('portalApp')
 			title:'Course 1',
 			tags: ['Coursename', 'Profname',],
 			instructorName: "Insert name",
-            subjectInstructors: ["Prof1","Prof2"]
+            subjectInstructors: ["Prof1","Prof2"],
+            taNames:"Insert names"
                      
 		},
 		{
 			title:'Course 2',
 			tags: ['Coursename', 'Profname'],
             instructorName: "Insert name",
-            subjectInstructors:["Prof1","Prof2"]
+            subjectInstructors:["Prof1","Prof2"],
+            taNames:"Insert names"
         },
 		{
 			title:'Course 3',
 			tags: ['Coursename', 'Profname'],
 			instructorName: "Insert name",
-            subjectInstructors:["Prof1","Prof2"]
+            subjectInstructors:["Prof1","Prof2"],
+            taNames:"Insert names"
         },
 		{
 			title:'Course 4',
 			tags: ['Coursename','Profname'],
 			instructorName: "Insert name",
-            subjectInstructors:["Prof1","Prof2"]
+            subjectInstructors:["Prof1","Prof2"],
+            taNames:"Insert names"
 		},
 		{
 			title:'Course 5',
 			tags: ['Coursename', 'Profname'],
 			instructorName: "Insert name",
-            subjectInstructors:["Prof1","Prof2"]
+            subjectInstructors:["Prof1","Prof2"],
+            taNames:"Insert names"
 		},
 		{
 			title:'Course 6',
 			tags: ['Coursename', 'Profname'],
 			instructorName: "Insert name",
-            subjectInstructors:["Prof1","Prof2"]
+            subjectInstructors:["Prof1","Prof2"],
+            taNames:"Insert names"
 		}
 	];
-    
-    $scope.subitems=[
-    
     
 	// Show main view in the first column as soon as controller loads
 	$scope.portalHelpers.showView('officehoursMain.html', 1);
