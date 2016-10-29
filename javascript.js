@@ -50,7 +50,7 @@ angular.module('portalApp')
     
     $scope.subitems = [
         {
-         title:'Course X',
+         title:'Course X', 
          tags: ['Coursename', 'Profname'],
          nameProf:"Displays name",
          daytime:"Days,Timings"
@@ -68,6 +68,6 @@ angular.module('portalApp')
     };
     $scope.showSubDetails= function(subitem){
         $scope.subdetailsItem = subitem;
-        $scope.portalHelpers.showView('officehoursSubDetails.html', 3);
+        $scope.portalHelpers.showView('officehoursSubitems.html', 3);
         };
 }]);
