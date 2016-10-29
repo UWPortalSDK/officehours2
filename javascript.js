@@ -8,7 +8,7 @@ angular.module('portalApp')
 			tags: ['Coursename', 'Profname',],
 			instructorName: "Insert name",
             subjectInstructors: ["Prof1","Prof2"],
-            taNames:"Insert names"
+            taNames:["Name1", "Name2"]
                      
 		},
 		{
