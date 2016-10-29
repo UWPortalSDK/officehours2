@@ -52,9 +52,9 @@
             <widget-cell fill>{{detailsItem.instructorName.nameProf}}</widget-cell>
                 <widget-icon name="angle-right"></widget-icon>
             </widget-row>
-		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
-			<widget-row clickable ng-click="showSIDetails(detailsItem.subjectInstructor)">
-				<widget-cell fill>{{item.nameProf}}</widget-cell>
+		<widget-list list="subjectInstructor in detailsItem.subjectInstructors" show-items="3">
+			<widget-row clickable ng-click="showSIDetails(subjectInstructor)">
+				<widget-cell fill>{{subjectInstructor.nameProf}}</widget-cell>
 				<widget-cell>
 					<widget-icon name="angle-right"></widget-icon>
 				</widget-cell>
@@ -101,26 +101,31 @@
 </script>
     
 <script type="text/ng-template" id="officehoursSubitemsSI.html">
+    <wr><wc>{{subdetailsItem.title}}</wc></wr>
+    
+    <wr><wc>{{subdetailsItem.nameProf}}</wc></wr>
+    
+    <wr><wc>{{subdetailsItem.daytime}}</wc></wr>
 	<wr>
-        <widget-list list="item in detailsItem.subjectInstructors.title" show-items="3">
-				<widget-cell fill>{{item}}</widget-cell>
+        <widget-list list="tag in subdetailsItem.tags">
+				<widget-cell fill>{{tag}}</widget-cell>
             </widget-list>
     </wr>
-    <wr>
+    <!-- <wr>
         <widget-list list="item in detailsItem.subjectInstructors.tags" show-items="3">
-				<widget-cell fill>{{item}}</widget-cell>
+				<widget-cell fill>{{subdetailsItem}}</widget-cell>
             </widget-list>
     </wr>
     <wr>
         <widget-list list="item in detailsItem.subjectInstructors.nameProf" show-items="3">
-				<widget-cell fill>{{item}}</widget-cell>
+				<widget-cell fill>{{subdetailsItem}}</widget-cell>
             </widget-list>
     </wr>
     <wr>
         <widget-list list="item in detailsItem.subjectInstructors.daytime" show-items="3">
-				<widget-cell fill>{{item}}</widget-cell>
+				<widget-cell fill>{{subdetailsItem}}</widget-cell>
             </widget-list>
-    </wr>
+    </wr> -->
 </script>
 
 <script type="text/ng-template" id="officehoursSubitemsTA.html">
