@@ -53,7 +53,7 @@
                 <widget-icon name="angle-right"></widget-icon>
             </widget-row>
 		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
-			<widget-row clickable ng-click="showSIDetails(detailsItem)">
+			<widget-row clickable ng-click="showSIDetails(detailsItem.subjectInstructor)">
 				<widget-cell fill>{{item.nameProf}}</widget-cell>
 				<widget-cell>
 					<widget-icon name="angle-right"></widget-icon>
@@ -61,7 +61,7 @@
 			</widget-row>
             </widget-list>
         <widget-list list="item in detailsItem.taNames" show-items="3">
-            <widget-row clickable ng-click="showTADetails(detailsItem)">
+            <widget-row clickable ng-click="showTADetails(detailsItem.taNames)">
                 <widget-cell fill>{{item.nameProf}}</widget-cell>
                 <widget-cell>
                     <widget-icon name="angle-right"></widget-icon>
@@ -84,22 +84,18 @@
 	<wr>
 		<wc-fill><h2>{{detailsItem.instructorName.title}}</h2></wc-fill>
             <widget-cell fill>{{item}}</widget-cell>
-                <widget-icon name="angle-right"></widget-icon>
     </wr>
     <wr>
 		<wc-fill><h2>{{detailsItem.instructorName.tags}}</h2></wc-fill>
             <widget-cell fill>{{item}}</widget-cell>
-                <widget-icon name="angle-right"></widget-icon>
     </wr>
     <wr>
 		<wc-fill><h2>{{detailsItem.instructorName.nameProf}}</h2></wc-fill>
             <widget-cell fill>{{item}}</widget-cell>
-                <widget-icon name="angle-right"></widget-icon>
     </wr>
     <wr>
 		<wc-fill><h2>{{detailsItem.instructorName.daytime}}</h2></wc-fill>
             <widget-cell fill>{{item}}</widget-cell>
-                <widget-icon name="angle-right"></widget-icon>
     </wr>
 	<wr><wc><div class="pSubitems"></div></wc></wr>
 </script>
