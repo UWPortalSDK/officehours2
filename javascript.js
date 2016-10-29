@@ -254,14 +254,14 @@ angular.module('portalApp')
     };
     $scope.showSIDetails= function(subitem){
         $scope.subdetailsItem = subitem;
-        $scope.portalHelpers.showView('officehoursSubitems.html', 3);
+        $scope.portalHelpers.showView('officehoursSubitemsSI.html', 3);
         };
     $scope.showTADetails= function(subitem){
         $scope.subdetailsItem = subitem;
-        $scope.portalHelpers.showView('officehoursSubitems.html', 3);
+        $scope.portalHelpers.showView('officehoursSubitemsTA.html', 3);
         };
     $scope.showIDetails= function(subitem){
         $scope.subdetailsItem = subitem;
-        $scope.portalHelpers.showView('officehoursSubitems.html', 3);
+        $scope.portalHelpers.showView('officehoursSubitemsI.html', 3);
         };
 }]);
