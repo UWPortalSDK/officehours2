@@ -78,7 +78,19 @@
 	<!-- 'wr' and 'wc' are short for 'widget-row' and 'widget-cell' -->
 	<wr>
 		<wc-fill><h2>{{subdetailsItem.title}}</h2></wc-fill>
-        
+            <widget-cell fill>{{detailsItem.instructorName}}</widget-cell>
+                <widget-icon name="angle-right"></widget-icon>
+		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
+				<widget-cell fill>{{item}}</widget-cell>
+				<widget-cell>
+					<widget-icon name="angle-right"></widget-icon>
+				</widget-cell>
+            </widget-list>
+        <widget-list list="item in detailsItem.taNames" show-items="3">
+                <widget-cell fill>{{item}}</widget-cell>
+                <widget-cell>
+                    <widget-icon name="angle-right"></widget-icon>
+                </widget-cell>
 	<wr><wc><div class="pSubitems"></div></wc></wr>
     </wr>
     
