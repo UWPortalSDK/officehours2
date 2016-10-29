@@ -35,7 +35,7 @@
 	</widget-filter>
 	<widget-searching>
 		<widget-list list="item in searchResults" show-items="3">
-			<widget-row clickable ng-click="showDetails(item)">
+			<widget-row clickable ng-click="showDetails(detailsItem)">
 				<widget-cell fill>{{item.title}}</widget-cell>
 				<widget-cell>
 					<widget-icon name="angle-right"></widget-icon>
@@ -44,12 +44,12 @@
 		</widget-list>
 	</widget-searching>
 	<widget-not-searching>
-        <widget-row clickable ng-click="showIDetails(subitem)">
+        <widget-row clickable ng-click="showIDetails(detailsItem.instructorName)">
             <widget-cell fill>{{detailsItem.instructorName.nameProf}}</widget-cell>
                 <widget-icon name="angle-right"></widget-icon>
             </widget-row>
 		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
-			<widget-row clickable ng-click="showSIDetails(subitem)">
+			<widget-row clickable ng-click="showSIDetails(detailsItem)">
 				<widget-cell fill>{{item.nameProf}}</widget-cell>
 				<widget-cell>
 					<widget-icon name="angle-right"></widget-icon>
@@ -57,7 +57,7 @@
 			</widget-row>
             </widget-list>
         <widget-list list="item in detailsItem.taNames" show-items="3">
-            <widget-row clickable ng-click="showTADetails(subitem)">
+            <widget-row clickable ng-click="showTADetails(detailsItem)">
                 <widget-cell fill>{{item.nameProf}}</widget-cell>
                 <widget-cell>
                     <widget-icon name="angle-right"></widget-icon>
@@ -78,14 +78,25 @@
 	<!-- 'wr' and 'wc' are short for 'widget-row' and 'widget-cell' -->
 	<wr>
 		<wc-fill><h2>{{subdetailsItem.title}}</h2></wc-fill>
-            <widget-cell fill>{{detailsItem.instructorName}}</widget-cell>
+            <widget-cell fill>{{subdetailsItem.nameProf}}</widget-cell>
                 <widget-icon name="angle-right"></widget-icon>
-		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
+    </wr>
+	<wr><wc><div class="pSubitems"></div></wc></wr>
+</script>
+    
+<script type="text/ng-template" id="officehoursSubitems.html">
+	<wr>
+        <widget-list list="item in detailsItem.subjectInstructors" show-items="3">
 				<widget-cell fill>{{item}}</widget-cell>
 				<widget-cell>
 					<widget-icon name="angle-right"></widget-icon>
 				</widget-cell>
             </widget-list>
+    </wr>
+</script>
+
+<script type="text/ng-template" id="officehoursSubitems.html">
+    <wr>
         <widget-list list="item in detailsItem.taNames" show-items="3">
                 <widget-cell fill>{{item}}</widget-cell>
                 <widget-cell>
@@ -93,6 +104,4 @@
                 </widget-cell>
             </widget-list>
     </wr>
-	<wr><wc><div class="pSubitems"></div></wc></wr>
-    
 </script>
