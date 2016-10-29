@@ -44,12 +44,12 @@
 		</widget-list>
 	</widget-searching>
 	<widget-not-searching>
-        <widget-row clickable ng-click="showSubDetails(item)">
+        <widget-row clickable ng-click="showIDetails">
             <widget-cell fill>{{detailsItem.instructorName}}</widget-cell>
                 <widget-icon name="angle-right"></widget-icon>
             </widget-row>
 		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
-			<widget-row clickable ng-click="showDetails(item)">
+			<widget-row clickable ng-click="showSIDetails(subitem)">
 				<widget-cell fill>{{item}}</widget-cell>
 				<widget-cell>
 					<widget-icon name="angle-right"></widget-icon>
@@ -57,7 +57,7 @@
 			</widget-row>
             </widget-list>
         <widget-list list="item in detailsItem.taNames" show-items="3">
-            <widget-row clickable ng-click="showDetails(item)">
+            <widget-row clickable ng-click="showTADetails(subitem)">
                 <widget-cell fill>{{item}}</widget-cell>
                 <widget-cell>
                     <widget-icon name="angle-right"></widget-icon>
