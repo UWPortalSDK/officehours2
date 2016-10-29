@@ -72,13 +72,14 @@
 	<wr><wc><div class="pSubDetails">{{subdetailsItem.details}}</div></wc></wr>
 </script>
 
+
 <!-- This template gets shown when user clicks one of the Professors in the list -->
 
 <script type="text/ng-template" id="officehoursSubitems.html"> 
 	<!-- 'wr' and 'wc' are short for 'widget-row' and 'widget-cell' -->
 	<wr>
 		<wc-fill><h2>{{subdetailsItem.title}}</h2></wc-fill>
-            <widget-cell fill>{{subdetailsItem.nameProf}}</widget-cell>
+            <widget-cell fill>{{detailsItem.instructorName}}</widget-cell>
                 <widget-icon name="angle-right"></widget-icon>
     </wr>
 	<wr><wc><div class="pSubitems"></div></wc></wr>
@@ -86,8 +87,8 @@
     
 <script type="text/ng-template" id="officehoursSubitems.html">
 	<wr>
-        <widget-list list="item in detailsItem.subjectInstructors" show-items="3">
-				<widget-cell fill>{{item}}</widget-cell>
+        <widget-list list="item in detailsItem.subjectInstructors" show-items="2">
+				<widget-cell fill>{{detailsItem.subjectinstructorName}}</widget-cell>
 				<widget-cell>
 					<widget-icon name="angle-right"></widget-icon>
 				</widget-cell>
@@ -98,7 +99,7 @@
 <script type="text/ng-template" id="officehoursSubitems.html">
     <wr>
         <widget-list list="item in detailsItem.taNames" show-items="3">
-                <widget-cell fill>{{item}}</widget-cell>
+                <widget-cell fill>{{detailsItem.taName}}</widget-cell>
                 <widget-cell>
                     <widget-icon name="angle-right"></widget-icon>
                 </widget-cell>
