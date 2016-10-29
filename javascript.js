@@ -42,6 +42,8 @@ angular.module('portalApp')
 		}
 	];
     
+    $scope.subitems=[
+    
     
 	// Show main view in the first column as soon as controller loads
 	$scope.portalHelpers.showView('officehoursMain.html', 1);
