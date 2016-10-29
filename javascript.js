@@ -6,7 +6,7 @@ angular.module('portalApp')
 		{
 			title:'Course 1',
 			tags: ['Coursename', 'Profname',],
-			details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+			details: 'Course Instructor:(Insert name)'
 		},
 		{
 			title:'Course 2',
