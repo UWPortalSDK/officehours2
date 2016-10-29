@@ -23,8 +23,8 @@
     
     <!-- WIDGET SEARCH BLOCK --> 
 <widget-search 
-	 label="What do you seek, padawan?" 
-	 placeholder="Type in a search term you must" 
+	 label="Instructor Name" 
+	 placeholder="Type in an instructor name, date, or time" 
 	 search-results-title="Behold"
 	 data="model" 
 	 min-char="2" 
@@ -57,7 +57,7 @@
 			</widget-row>
             </widget-list>
         <widget-list list="item in detailsItem.taNames" show-items="3">
-            <widget-row clickable ng-click="showDetails(item">
+            <widget-row clickable ng-click="showDetails(item)">
                 <widget-cell fill>{{item}}</widget-cell>
                 <widget-cell>
                     <widget-icon name="angle-right"></widget-icon>
