@@ -29,13 +29,13 @@ angular.module('portalApp')
             taNames:[
                     {
          			 title:'Course X', 
-         			 tags: ['Coursename', 'TAname'],
+         			 tags: ['Coursename', 'Profname'],
          			 nameProf:"Displays name",
          			 daytime:"Days,Timings"
         			},
                 	{
          			title:'Course X', 
-         			tags: ['Coursename', 'TAname'],
+         			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			}
@@ -69,13 +69,13 @@ angular.module('portalApp')
             taNames:[
                     {
          			title:'Course X', 
-         			tags: ['Coursename', 'TAname'],
+         			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			},
                     {
          			title:'Course X', 
-         			tags: ['Coursename', 'TAname'],
+         			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
 		            daytime:"Days,Timings"
         			}
@@ -109,13 +109,13 @@ angular.module('portalApp')
             taNames:[
                         {
          				title:'Course X', 
-         				tags: ['Coursename', 'TAname'],
+         				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
         				}, 
                         {
          				title:'Course X', 
-         				tags: ['Coursename', 'TAname'],
+         				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
         				}
@@ -149,13 +149,13 @@ angular.module('portalApp')
             taNames:[
                         {
          				title:'Course X', 
-         				tags: ['Coursename', 'TAname'],
+         				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
         				}, 
                         {
          				title:'Course X', 
-         				tags: ['Coursename', 'TAname'],
+         				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
         				}
@@ -189,13 +189,13 @@ angular.module('portalApp')
             taNames:[
           	        {
    				    title:'Course X', 
-         		    tags: ['Coursename', 'TAname'],
+         		    tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			}, 
                     {
          			title:'Course X', 
-         			tags: ['Coursename', 'TAname'],
+         			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			}
@@ -229,13 +229,13 @@ angular.module('portalApp')
             taNames:[
                      {
          			title:'Course X', 
-         			tags: ['Coursename', 'TAname'],
+         			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			}, 
                    {
          			title:'Course X', 
-         			tags: ['Coursename', 'TAname'],
+         			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			}
@@ -261,7 +261,15 @@ angular.module('portalApp')
 		$scope.detailsItem = item;	
 		$scope.portalHelpers.showView('officehoursDetails.html', 2);
     };
-    $scope.showSubDetails= function(subitem){
+    $scope.showSIDetails= function(subitem){
+        $scope.subdetailsItem = subitem;
+        $scope.portalHelpers.showView('officehoursSubitems.html', 3);
+        };
+    $scope.showTADetails= function(subitem){
+        $scope.subdetailsItem = subitem;
+        $scope.portalHelpers.showView('officehoursSubitems.html', 3);
+        };
+    $scope.showIDetails= function(subitem){
         $scope.subdetailsItem = subitem;
         $scope.portalHelpers.showView('officehoursSubitems.html', 3);
         };
