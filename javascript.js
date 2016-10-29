@@ -6,34 +6,39 @@ angular.module('portalApp')
 		{
 			title:'Course 1',
 			tags: ['Coursename', 'Profname',],
-			instructorName: "somebody",
-            subjectInstructors: ["a","b"]
+			instructorName: "Insert name",
+            subjectInstructors: ["Prof1","Prof2"]
                      
 		},
 		{
 			title:'Course 2',
 			tags: ['Coursename', 'Profname'],
-			details: 'Mauris cursus, sapien et malesuada ultrices, purus sapien iaculis tellus, quis semper magna est at leo.'
-		},
+            instructorName: "Insert name",
+            subjectInstructors:["Prof1","Prof2"]
+        },
 		{
 			title:'Course 3',
 			tags: ['Coursename', 'Profname'],
-			details: 'Donec id quam eu odio feugiat sagittis. Duis a tempus neque. Praesent elementum quis ante quis commodo. Sed tincidunt aliquet dolor sit amet laoreet. '
-		},
+			instructorName: "Insert name",
+            subjectInstructors:["Prof1","Prof2"]
+        },
 		{
 			title:'Course 4',
 			tags: ['Coursename','Profname'],
-			details: 'Proin sem quam, rutrum id ante id, scelerisque tempor quam. Curabitur pharetra turpis at sem placerat, non vehicula ligula tincidunt.'
+			instructorName: "Insert name",
+            subjectInstructors:["Prof1","Prof2"]
 		},
 		{
 			title:'Course 5',
 			tags: ['Coursename', 'Profname'],
-			details: 'Mauris nec ultricies metus. Cras et dictum justo. Nam a ullamcorper dolor. Cras fringilla metus vel facilisis vehicula.'
+			instructorName: "Insert name",
+            subjectInstructors:["Prof1","Prof2"]
 		},
 		{
 			title:'Course 6',
 			tags: ['Coursename', 'Profname'],
-			details: 'Curabitur scelerisque lorem risus, in luctus orci hendrerit non. Praesent quis tellus dapibus dolor consectetur volutpat.'
+			instructorName: "Insert name",
+            subjectInstructors:["Prof1","Prof2"]
 		}
 	];
 	
