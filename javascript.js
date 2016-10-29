@@ -16,35 +16,35 @@ angular.module('portalApp')
 			tags: ['Coursename', 'Profname'],
             instructorName: "Insert name",
             subjectInstructors:["Prof1","Prof2"],
-            taNames:"Insert names"
+            taNames:["Name1", "Name 2"]
         },
 		{
 			title:'Course 3',
 			tags: ['Coursename', 'Profname'],
 			instructorName: "Insert name",
             subjectInstructors:["Prof1","Prof2"],
-            taNames:"Insert names"
+            taNames:["Name1", "Name 2"]
         },
 		{
 			title:'Course 4',
 			tags: ['Coursename','Profname'],
 			instructorName: "Insert name",
             subjectInstructors:["Prof1","Prof2"],
-            taNames:"Insert names"
+            taNames:["Name1", "Name2"]
 		},
 		{
 			title:'Course 5',
 			tags: ['Coursename', 'Profname'],
 			instructorName: "Insert name",
             subjectInstructors:["Prof1","Prof2"],
-            taNames:"Insert names"
+            taNames:["Name1", "Name2"]
 		},
 		{
 			title:'Course 6',
 			tags: ['Coursename', 'Profname'],
 			instructorName: "Insert name",
             subjectInstructors:["Prof1","Prof2"],
-            taNames:"Insert names"
+            taNames:["Name1", "Name2"]
 		}
 	];
     
@@ -53,7 +53,7 @@ angular.module('portalApp')
          title:'Course X',
          tags: ['Coursename', 'Profname'],
          nameProf:"Displays name",
-         daytime:"Wednesday,5-6pm"
+         daytime:"Days,Timings"
         }
         ];
     
