@@ -52,7 +52,7 @@
             <widget-cell fill>{{detailsItem.instructorName.nameProf}}</widget-cell>
                 <widget-icon name="angle-right"></widget-icon>
             </widget-row>
-		<widget-list list="subjectInstructor in detailsItem.subjectInstructors">
+		<widget-list list="subjectInstructor in detailsItem.subjectInstructors" >
 			<widget-row clickable ng-click="showSIDetails(subjectInstructor)">
 				<widget-cell fill>{{subjectInstructor.nameProf}}</widget-cell>
 				<widget-cell>
@@ -60,7 +60,7 @@
 				</widget-cell>
 			</widget-row>
             </widget-list>
-		<widget-list list="taName in detailsItem.taNames" show-items="3">
+		<widget-list list="taName in detailsItem.taNames" show-items="3" >
 			<widget-row clickable ng-click="showTADetails(taName)">
 				<widget-cell fill>{{taName.nameProf}}</widget-cell>
 				<widget-cell>
