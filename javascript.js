@@ -41,6 +41,8 @@ angular.module('portalApp')
             subjectInstructors:["Prof1","Prof2"]
 		}
 	];
+    
+    $scope.
 	
 	// Show main view in the first column as soon as controller loads
 	$scope.portalHelpers.showView('officehoursMain.html', 1);
@@ -52,7 +54,7 @@ angular.module('portalApp')
 		$scope.portalHelpers.showView('officehoursDetails.html', 2);
     };
     $scope.showSubDetails= function(subitem){
-        $scope.detailsItem = subitem;
-        $scope.portalHelpers.showView('officehoursDetailsDetails.html', 3);
+        $scope.subdetailsItem = subitem;
+        $scope.portalHelpers.showView('officehoursSubDetails.html', 3);
         };
 }]);
