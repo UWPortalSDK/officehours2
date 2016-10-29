@@ -1,4 +1,122 @@
 
+<!-- Primary template that will get shown when widget loads -->
+<script type="text/ng-template" id="officehoursMain.html"> 
+    Check out your prof's office hours here!
+	<div class="item item-text-wrap item-icon-right" ng-repeat="item in items" clickable ng-click="showDetails(item)">
+			<span class="itemName">{{item.title}}</span>
+			<span ng-repeat= "tag in item.tags" class="label label-success">
+				{{tag}}
+			</span>
+			<i class="ion-chevron-right icon"></i>
+	</div>
+</script>
+
+<!-- This template gets shown when user clicks one of the courses in the list -->
+<script type="text/ng-template" id="officehoursDetails.html"> 
+	<!-- 'wr' and 'wc' are short for 'widget-row' and 'widget-cell' -->
+	<div>
+		{{detailsItem.title}}
+	</div>
+    
+    <!-- WIDGET SEARCH BLOCK --> 
+<widget-search 
+	 label="Instructor Name" 
+	 placeholder="Type in an instructor name, date, or time" 
+	 search-results-title="Behold"
+	 data="model" 
+	 min-char="2" 
+	 fields="["title","details"]">
+	<widget-filter 
+			fields="['daytime']" 
+			filters="[{value:'monday',text:'Monday'},{value:'tuesday',text:'Tuesday'},
+                     {value:'wednesday',text:'Wednesday'},{value:'thursday',text:'Thursday'},
+                     {value:'friday',text:'Friday'}]"
+            title= "Pick a category">
+	</widget-filter>
+	<widget-searching>
+		<widget-list list="item in searchResults" show-items="3">
+			<div clickable ng-click="showDetails(detailsItem)">
+				{{item.title}}
+					<i class="ion-chevron-right icon"></i>
+			</div>
+		</widget-list>
+	</widget-searching>
+	<widget-not-searching>
+        <div clickable ng-click="showIDetails(detailsItem.instructorName)">
+            {{detailsItem.instructorName.nameProf}}
+                <i class="ion-chevron-right icon"></i>
+            </div>
+		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
+			<div clickable ng-click="showSIDetails(detailsItem)">
+				{{item.nameProf}}
+					<i class="ion-chevron-right icon"></i>
+			</div>
+            </widget-list>
+        <widget-list list="item in detailsItem.taNames" show-items="3">
+            <div clickable ng-click="showTADetails(detailsItem)">
+                {{item.nameProf}}
+                    <i class="ion-chevron-right icon"></i>
+           </div>
+		</widget-list>
+	</widget-not-searching>
+</widget-search>
+<!-- WIDGET SEARCH BLOCK --> 
+
+	<div><span ng-repeat= "tag in subdetailsItem.tags" class="label label-success">{{tag}}</span></div>
+	<div><div class="pSubDetails">{{subdetailsItem.details}}</div></div>
+</script>
+
+
+<!-- This template gets shown when user clicks one of the Professors in the list -->
+
+<script type="text/ng-template" id="officehoursSubitemsI.html"> 
+	<!-- 'wr' and 'wc' are short for 'widget-row' and 'widget-cell' -->
+	<div>
+		{{detailsItem.instructorName.title}}
+         {{item}}
+                <i class="ion-chevron-right icon"></i>
+    </div>
+    <div>
+		{{detailsItem.instructorName.tags}}
+            {{item}}
+                <i class="ion-chevron-right icon"></i>
+    </div>
+    <div>
+		{{detailsItem.instructorName.nameProf}}
+            {{item}}
+                <i class="ion-chevron-right icon"></i>
+    </div>
+    <div>
+		{{detailsItem.instructorName.daytime}}
+            {{item}}
+                <i class="ion-chevron-right icon"></i>
+    </div>
+	<div><div class="pSubitems"></div></div>
+</script>
+    
+<script type="text/ng-template" id="officehoursSubitemsSI.html">
+	<div>
+        <widget-list list="item in detailsItem.subjectInstructors.title" show-items="3">
+				{{item}}
+            </widget-list>
+    </div>
+    <div>
+        <widget-list list="item in detailsItem.subjectInstructors.tags" show-items="3">
+				{{item}}
+            </widget-list>
+    </div>
+    <div>
+        <widget-list list="item in detailsItem.subjectInstructors.nameProf" show-items="3">
+				<widget-cell fill>{{item}}</widget-cell>
+            </widget-list>
+    </div>
+    <div>
+        <widget-list list="item in detailsItem.subjectInstructors.daytime" show-items="3">
+				{{item}}
+            </widget-list>
+    </div>
+</script>
+
 <script type="text/ng-template" id="officehoursSubitemsTA.html">
     <div>
         <widget-list list="item in detailsItem.taNames.title" show-items="3">
