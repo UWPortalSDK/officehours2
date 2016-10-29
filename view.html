@@ -44,7 +44,7 @@
 		</widget-list>
 	</widget-searching>
 	<widget-not-searching>
-        <widget-row clickable ng-click="showDetails(item)">
+        <widget-row clickable ng-click="showSubDetails(item)">
             <widget-cell fill>{{detailsItem.instructorName}}</widget-cell>
                 <widget-icon name="angle-right"></widget-icon>
             </widget-row>
@@ -73,10 +73,12 @@
 </script>
 
 <!-- This template gets shown when user clicks one of the Professors in the list -->
-<script type="text/ng-template" id="officehoursSubDetails.html"> 
+
+<script type="text/ng-template" id="officehoursSubitems.html"> 
 	<!-- 'wr' and 'wc' are short for 'widget-row' and 'widget-cell' -->
 	<wr>
-		<wc><h2>{{subdetailsItem.title}}</h2></wc>
-	<wr><wc><span ng-repeat= "tag in subdetailsItem.tags" class="label label-success">{{tag}}</span></wc></wr>
-	<wr><wc><div class="pSubDetails"></div></wc></wr>
+		<wc-fill><h2>{{subdetailsItem.title}}</h2></wc-fill>
+	<wr><wc><div class="pSubitems"></div></wc></wr>
+    </wr>
+    
 </script>
