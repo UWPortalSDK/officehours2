@@ -1,21 +1,23 @@
-<!-- Primary template that will get shown when widget loads -->
-<script type="text/ng-template" id="officehoursMain.html"> 
-    Hello
-	<div class="item item-text-wrap item-icon-right" ng-repeat="item in items" ng-click="showDetails(item)">
-		<span class="itemName">{{item.title}}</span>
-		<span ng-repeat= "tag in item.tags" class="badge badge-balanced">
-			{{tag}}
-		</span>
-	
-		<i class="ion-chevron-right icon"></i>
-	</div>
-</script>
 
-<!-- This template gets shown when user clicks one of the items in the list -->
-<script type="text/ng-template" id="officehoursDetails.html"> 
-	<div class="item">
-		{{detailsItem.title}}
-	</div>
-	<div class="item item-text-wrap"><span ng-repeat= "tag in detailsItem.tags" class="badge badge-balanced">{{tag}}</span></div>
-	<div class="item item-text-wrap"><p>{{detailsItem.details}}</p></div>
+<script type="text/ng-template" id="officehoursSubitemsTA.html">
+    <div>
+        <widget-list list="item in detailsItem.taNames.title" show-items="3">
+                {{item}}
+            </widget-list>
+    </div>
+    <div>
+        <widget-list list="item in detailsItem.taNames.tags" show-items="3">
+                {{item}}
+            </widget-list>
+    </div>
+    <div>
+        <widget-list list="item in detailsItem.taNames.nameProf" show-items="3">
+                {{item}}
+            </widget-list>
+    </div>
+    <div>
+        <widget-list list="item in detailsItem.taNames.daytime" show-items="3">
+                {{item}}
+            </widget-list>
+    </div>
 </script>
