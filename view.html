@@ -44,14 +44,13 @@
 		</widget-list>
 	</widget-searching>
 	<widget-not-searching>
-		<widget-row>
-			<widget-cell>
-				<h2>Item List</h2>
-			</widget-cell>
-		</widget-row>
-		<widget-list list="item in model" show-items="3">
+        <widget-row clickable ng-click="showDetails(item)">
+            <widget-cell fill>{{detailsItem.instructorName}}</widget-cell>
+                <widget-icon name="angle-right"></widget-icon>
+            </widget-row>
+		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
 			<widget-row clickable ng-click="showDetails(item)">
-				<widget-cell fill>{{item.title}}</widget-cell>
+				<widget-cell fill>{{item}}</widget-cell>
 				<widget-cell>
 					<widget-icon name="angle-right"></widget-icon>
 				</widget-cell>
@@ -63,22 +62,6 @@
 
 	<wr><wc><span ng-repeat= "tag in subdetailsItem.tags" class="label label-success">{{tag}}</span></wc></wr>
 	<wr><wc><div class="pSubDetails">{{subdetailsItem.details}}</div></wc></wr>
-    <!-- This is to allow people to click on items in this screen and be redirected to a different page -->
-    	<widget-row ng-repeat="item in items" clickable ng-click="showSubDetails(item)">
-		<widget-cell fill>
-			<span class="itemName">{{item.title}}</span>
-			<span ng-repeat= "tag in item.tags" class="label label-success">
-				{{tag}}
-			</span>
-        <widget-row clickable ng-click="showInstructorName">
-        <widget-row clickable ng-click="showSubjectInstructors">
-        <widget-row clickable ng-click="showTaNames">
-            
-		</widget-cell>
-		<widget-cell>
-			<widget-icon name="angle-right"></widget-icon>
-		</widget-cell>
-	</widget-row>
 </script>
 
 <!-- This template gets shown when user clicks one of the Professors in the list -->
