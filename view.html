@@ -61,8 +61,8 @@
 </widget-search>
 <!-- WIDGET SEARCH BLOCK --> 
 
-	<wr><wc><span ng-repeat= "tag in detailsdetailsItem.tags" class="label label-success">{{tag}}</span></wc></wr>
-	<wr><wc><div class="pDetailsDetails">{{detailsdetailsItem.detailsdetails}}</div></wc></wr>
+	<wr><wc><span ng-repeat= "tag in subdetailsItem.tags" class="label label-success">{{tag}}</span></wc></wr>
+	<wr><wc><div class="pSubDetails">{{subdetailsItem.subdetails}}</div></wc></wr>
     <!-- This is to allow people to click on items in this screen and be redirected to a different page -->
     	<widget-row ng-repeat="item in items" clickable ng-click="showDetailsDetails(item)">
 		<widget-cell fill>
@@ -78,11 +78,11 @@
 </script>
 
 <!-- This template gets shown when user clicks one of the Professors in the list -->
-<script type="text/ng-template" id="officehoursDetailsDetails.html"> 
+<script type="text/ng-template" id="officehoursSubDetails.html"> 
 	<!-- 'wr' and 'wc' are short for 'widget-row' and 'widget-cell' -->
 	<wr>
-		<wc><h2>{{detailsdetailsItem.title}}</h2></wc>
+		<wc><h2>{{subdetailsItem.title}}</h2></wc>
 	</wr>
-	<wr><wc><span ng-repeat= "tag in detailsdetailsItem.tags" class="label label-success">{{tag}}</span></wc></wr>
-	<wr><wc><div class="pDetailsDetails">{{detailsdetailsItem.details}}</div></wc></wr>
+	<wr><wc><span ng-repeat= "tag in subdetailsItem.tags" class="label label-success">{{tag}}</span></wc></wr>
+	<wr><wc><div class="pSubDetails">{subdetailsItem.details}}</div></wc></wr>
 </script>
