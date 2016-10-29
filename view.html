@@ -64,7 +64,7 @@
 	<wr><wc><span ng-repeat= "tag in subdetailsItem.tags" class="label label-success">{{tag}}</span></wc></wr>
 	<wr><wc><div class="pSubDetails">{{subdetailsItem.subdetails}}</div></wc></wr>
     <!-- This is to allow people to click on items in this screen and be redirected to a different page -->
-    	<widget-row ng-repeat="item in items" clickable ng-click="showDetailsDetails(item)">
+    	<widget-row ng-repeat="item in items" clickable ng-click="showSubDetails(item)">
 		<widget-cell fill>
 			<span class="itemName">{{item.title}}</span>
 			<span ng-repeat= "tag in item.tags" class="label label-success">
