@@ -34,7 +34,7 @@
             title= "Pick a category">
 	</widget-filter>
 	<widget-searching>
-		<widget-list list="item in searchResults" show-items="3">
+		<widget-list list="item in searchResults" show-items="3" render="true">
 			<div clickable ng-click="showDetails(detailsItem)">
 				{{item.title}}
 					<i class="ion-chevron-right icon"></i>
@@ -46,15 +46,15 @@
             {{detailsItem.instructorName.nameProf}}
                 <i class="ion-chevron-right icon"></i>
             </div>
-		<widget-list list="item in detailsItem.subjectInstructors" show-items="3">
-			<div clickable ng-click="showSIDetails(detailsItem)">
-				{{item.nameProf}}
+		<widget-list list="subjectInstructor in detailsItem.subjectInstructors track by subjectInstructor.nameProf" render="true">
+			<div clickable ng-click="showSIDetails(subjectInstructor)">
+				{{subjectInstructor.nameProf}}
 					<i class="ion-chevron-right icon"></i>
 			</div>
             </widget-list>
-        <widget-list list="item in detailsItem.taNames" show-items="3">
-            <div clickable ng-click="showTADetails(detailsItem)">
-                {{item.nameProf}}
+        <widget-list list="taName in detailsItem.taNames track by taName.nameProf" render="true">
+            <div clickable ng-click="showTADetails(taName)">
+                {{taName.nameProf}}
                     <i class="ion-chevron-right icon"></i>
            </div>
 		</widget-list>
@@ -67,13 +67,14 @@
 </script>
 
 
+
 <!-- This template gets shown when user clicks one of the Professors in the list -->
 
 <script type="text/ng-template" id="officehoursSubitemsI.html"> 
 	<!-- 'wr' and 'wc' are short for 'widget-row' and 'widget-cell' -->
 	<div>
 		{{detailsItem.instructorName.title}}
-         {{item}}
+            {{item}}
     </div>
     <div>
 		{{detailsItem.instructorName.tags}}
@@ -91,47 +92,27 @@
 </script>
     
 <script type="text/ng-template" id="officehoursSubitemsSI.html">
+    <div>{{subdetailsItem.title}}</div>
+    
+    <div>{{subdetailsItem.nameProf}}</div>
+    
+    <div>{{subdetailsItem.daytime}}</div>
 	<div>
-        <widget-list list="item in detailsItem.subjectInstructors.title" show-items="3">
-				{{item}}
-            </widget-list>
-    </div>
-    <div>
-        <widget-list list="item in detailsItem.subjectInstructors.tags" show-items="3">
-				{{item}}
-            </widget-list>
-    </div>
-    <div>
-        <widget-list list="item in detailsItem.subjectInstructors.nameProf" show-items="3">
-				<widget-cell fill>{{item}}</widget-cell>
-            </widget-list>
-    </div>
-    <div>
-        <widget-list list="item in detailsItem.subjectInstructors.daytime" show-items="3">
-				{{item}}
+        <widget-list list="tag in subdetailsItem.tags track by tag" render="true">
+				{{tag}}
             </widget-list>
     </div>
 </script>
 
 <script type="text/ng-template" id="officehoursSubitemsTA.html">
-    <div>
-        <widget-list list="item in detailsItem.taNames.title" show-items="3">
-                {{item}}
-            </widget-list>
-    </div>
-    <div>
-        <widget-list list="item in detailsItem.taNames.tags" show-items="3">
-                {{item}}
-            </widget-list>
-    </div>
-    <div>
-        <widget-list list="item in detailsItem.taNames.nameProf" show-items="3">
-                {{item}}
-            </widget-list>
-    </div>
-    <div>
-        <widget-list list="item in detailsItem.taNames.daytime" show-items="3">
-                {{item}}
+    <div>{{subdetailsItem.title}}</div>
+    
+    <div>{{subdetailsItem.nameProf}}</div>
+    
+    <div>{{subdetailsItem.daytime}}</div>
+	<div>
+        <widget-list list="tag in subdetailsItem.tags track by tag" render="true">
+				{{tag}}
             </widget-list>
     </div>
 </script>
