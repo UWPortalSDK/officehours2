@@ -7,20 +7,20 @@ angular.module('portalApp')
 			title:'Course 1',
 			tags: ['Coursename', 'Profname',],
 			instructorName:         {
-           								title:'Course X', 
+           								title:'Course 1', 
          								tags: ['Coursename', 'Profname'],
          								nameProf:"Displays name",
          								daytime:"Days,Timings"
          							},
             subjectInstructors: [        
         					  {
-         						title:'Course X', 
+         						title:'Course 1A', 
          						tags: ['Coursename', 'Profname'],
          						nameProf:"Displays name",
          						daytime:"Days,Timings"
         						},
         					{
-         						title:'Course X', 
+         						title:'Course 1B', 
          						tags: ['Coursename', 'Profname'],
          						nameProf:"Displays name",
          						daytime:"Days,Timings"
@@ -28,13 +28,13 @@ angular.module('portalApp')
             			],
             taNames:[
                     {
-         			 title:'Course X', 
+         			 title:'Course 1a', 
          			 tags: ['Coursename', 'Profname'],
          			 nameProf:"Displays name",
          			 daytime:"Days,Timings"
         			},
                 	{
-         			title:'Course X', 
+         			title:'Course 1b', 
          			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
@@ -47,20 +47,20 @@ angular.module('portalApp')
 			title:'Course 2',
 			tags: ['Coursename', 'Profname'],
             instructorName:         {
-         								title:'Course X', 
+         								title:'Course 2', 
          								tags: ['Coursename', 'Profname'],
          								nameProf:"Displays name",
          								daytime:"Days,Timings"
         							},
             subjectInstructors:[
         						        {
-         									title:'Course X', 
+         									title:'Course 2A', 
          									tags: ['Coursename', 'Profname'],
          									nameProf:"Displays name",
          									daytime:"Days,Timings"
         								},
                                        {
-         								title:'Course X', 
+         								title:'Course 2B', 
          								tags: ['Coursename', 'Profname'],
          								nameProf:"Displays name",
          								daytime:"Days,Timings"
@@ -68,13 +68,13 @@ angular.module('portalApp')
                                ],
             taNames:[
                     {
-         			title:'Course X', 
+         			title:'Course 2a', 
          			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			},
                     {
-         			title:'Course X', 
+         			title:'Course 2b', 
          			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
 		            daytime:"Days,Timings"
@@ -87,20 +87,20 @@ angular.module('portalApp')
 			tags: ['Coursename', 'Profname'],
 			instructorName:
                     {
-         			title:'Course X', 
+         			title:'Course 3', 
          			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			},
             subjectInstructors:[
                         		{
-         						title:'Course X', 
+         						title:'Course 3A', 
          						tags: ['Coursename', 'Profname'],
          						nameProf:"Displays name",
          						daytime:"Days,Timings"
         						},
          		               {
-         						title:'Course X', 
+         						title:'Course 3B', 
          						tags: ['Coursename', 'Profname'],
          						nameProf:"Displays name",
          						daytime:"Days,Timings"
@@ -108,13 +108,13 @@ angular.module('portalApp')
             					],
             taNames:[
                         {
-         				title:'Course X', 
+         				title:'Course 3a', 
          				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
         				}, 
                         {
-         				title:'Course X', 
+         				title:'Course 3b', 
          				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
@@ -127,20 +127,20 @@ angular.module('portalApp')
 			tags: ['Coursename','Profname'],
 			instructorName:
             			{
-         				title:'Course X', 
+         				title:'Course 4', 
          				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
         				},
             subjectInstructors:[
                 				{
-         						title:'Course X', 
+         						title:'Course 4A', 
          						tags: ['Coursename', 'Profname'],
          						nameProf:"Displays name",
          						daytime:"Days,Timings"
         						},
            				        {
-         						title:'Course X', 
+         						title:'Course 4B', 
          						tags: ['Coursename', 'Profname'],
          						nameProf:"Displays name",
          						daytime:"Days,Timings"
@@ -148,13 +148,13 @@ angular.module('portalApp')
             				],
             taNames:[
                         {
-         				title:'Course X', 
+         				title:'Course 4a', 
          				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
         				}, 
                         {
-         				title:'Course X', 
+         				title:'Course 4b', 
          				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
@@ -167,20 +167,20 @@ angular.module('portalApp')
 			tags: ['Coursename', 'Profname'],
 			instructorName:
             			{
-         				title:'Course X', 
+         				title:'Course 5', 
          				tags: ['Coursename', 'Profname'],
          				nameProf:"Displays name",
          				daytime:"Days,Timings"
         				},
             subjectInstructors:[        
             {
-            title:'Course X', 
+            title:'Course 5A', 
             tags: ['Coursename', 'Profname'],
             nameProf:"Displays name",
             daytime:"Days,Timings"
             },
            {
-            title:'Course X', 
+            title:'Course 5B', 
             tags: ['Coursename', 'Profname'],
             nameProf:"Displays name",
             daytime:"Days,Timings"
@@ -188,13 +188,13 @@ angular.module('portalApp')
             ],
             taNames:[
           	        {
-   				    title:'Course X', 
+   				    title:'Course 5a', 
          		    tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			}, 
                     {
-         			title:'Course X', 
+         			title:'Course 5b', 
          			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
@@ -207,20 +207,20 @@ angular.module('portalApp')
 			tags: ['Coursename', 'Profname'],
 			instructorName: 
          			        {
-      					   title:'Course X', 
+      					   title:'Course 6', 
          				   tags: ['Coursename', 'Profname'],
          				   nameProf:"Displays name",
          			       daytime:"Days,Timings"
         					},
             subjectInstructors:[        
                 {
-          		title:'Course X', 
+          		title:'Course 6A', 
          		tags: ['Coursename', 'Profname'],
          		nameProf:"Displays name",
          		daytime:"Days,Timings"
         		},
                 {
-         		title:'Course X', 
+         		title:'Course 6B', 
          		tags: ['Coursename', 'Profname'],
          		nameProf:"Displays name",
          		daytime:"Days,Timings"
@@ -228,13 +228,13 @@ angular.module('portalApp')
             ],
             taNames:[
                      {
-         			title:'Course X', 
+         			title:'Course 6a', 
          			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
         			}, 
                    {
-         			title:'Course X', 
+         			title:'Course 6b', 
          			tags: ['Coursename', 'Profname'],
          			nameProf:"Displays name",
          			daytime:"Days,Timings"
