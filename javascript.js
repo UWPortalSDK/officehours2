@@ -242,16 +242,7 @@ angular.module('portalApp')
             ]
 		}
 	];
-    
-    $scope.subitems = [
-        {
-         title:'Course X', 
-         tags: ['Coursename', 'Profname'],
-         nameProf:"Displays name",
-         daytime:"Days,Timings"
-        }
-        ];
-    
+       
 	// Show main view in the first column as soon as controller loads
 	$scope.portalHelpers.showView('officehoursMain.html', 1);
 	
