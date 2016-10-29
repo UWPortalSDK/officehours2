@@ -6,7 +6,9 @@ angular.module('portalApp')
 		{
 			title:'Course 1',
 			tags: ['Coursename', 'Profname',],
-			details: 'Course Instructor:(Insert name)'
+			instructorName: "somebody",
+            subjectInstructors: ["a","b"]
+                     
 		},
 		{
 			title:'Course 2',
@@ -41,7 +43,11 @@ angular.module('portalApp')
 	// This function gets called when user clicks an item in the list
 	$scope.showDetails = function(item){
 		// Make the item that user clicked available to the template
-		$scope.detailsItem = item;		
+		$scope.detailsItem = item;	
 		$scope.portalHelpers.showView('officehoursDetails.html', 2);
-	}
+    };
+    $scope.showSubDetails= function(subitem){
+        $scope.detailsItem = subitem;
+        $scope.portalHelpers.showView('officehoursDetailsDetails.html', 3);
+        };
 }]);
